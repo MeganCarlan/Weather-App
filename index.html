@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+        <form id="form">
+            <label for="city">City:</label><br>
+            <input type="text" id="cityInput" name="city"><br>
+            <label for="state">State:</label><br>
+            <input type="text" id="stateInput" name="state"><br>
+            <label for="zipcode">Zip Code:</label><br>
+            <input type="text" id="zipcodeInput" name="zipcode"><br>
+            <input type="radio" id="metric" name="unit" value="Metric">
+            <label for="metric">Metric</label><br>
+            <input type="radio" id="imperial" name="unit" value="Imperial">
+            <label for="imperial">Imperial</label><br>
+            <button type="submit">Submit</button>
+        </form>
+        <section id="weatherDisplay">
+            <p id="city">City:</p>
+            <p id="state">State:</p>
+            <p id="temperature">Temperature:</p>
+            <button id="saveButton" type="submit">Save</button>
+        </section>
+        <section>
+          <h3>Saved Locations</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>City</th>
+                <th>State</th>
+                <th>Temperature</th>
+              </tr>
+           </thead>
+           <tbody id="savedContainer">
+
+           </tbody>
+            
+          </table>
+        </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
